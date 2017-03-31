@@ -1,0 +1,8 @@
+c:\Users\KevinPC\documents\visual studio 2015\Projects\FrontEnd\Library1\bin\Debug\Library1.XML
+c:\Users\KevinPC\documents\visual studio 2015\Projects\FrontEnd\Library1\bin\Debug\Library1.dll
+c:\Users\KevinPC\documents\visual studio 2015\Projects\FrontEnd\Library1\bin\Debug\Library1.pdb
+c:\Users\KevinPC\documents\visual studio 2015\Projects\FrontEnd\Library1\bin\Debug\FSharp.Core.dll
+c:\Users\KevinPC\documents\visual studio 2015\Projects\FrontEnd\Library1\bin\Debug\FSharp.Core.xml
+c:\Users\KevinPC\documents\visual studio 2015\Projects\FrontEnd\Library1\obj\Debug\Library1.dll
+c:\Users\KevinPC\documents\visual studio 2015\Projects\FrontEnd\Library1\obj\Debug\Library1.pdb
+c:\Users\KevinPC\documents\visual studio 2015\Projects\FrontEnd\Library1\bin\Debug\MonoGame.Framework.dll
