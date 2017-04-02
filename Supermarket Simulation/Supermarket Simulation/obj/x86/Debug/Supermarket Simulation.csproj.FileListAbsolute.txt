@@ -1,0 +1,31 @@
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.exe
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.pdb
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\MonoGame.Framework.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XInput.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\MonoGame.Framework.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XInput.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.csprojResolveAssemblyReference.cache
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.exe
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.pdb
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\wall.xnb
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.exe.config
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.dll
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.pdb
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.xml
+c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\obstacle.xnb

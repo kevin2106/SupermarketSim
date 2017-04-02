@@ -51,7 +51,7 @@ namespace FrontEnd
 
             // TODO: use this.Content to load your game content here
 
-            foreach (var item in SupermarketSimulation.drawBrick(gameState.Obstacles))
+            foreach (var item in SupermarketSimulation.)
             {
 
             }

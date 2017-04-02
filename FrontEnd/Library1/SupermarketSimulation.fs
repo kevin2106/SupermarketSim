@@ -39,8 +39,7 @@ let drawObstacle (obstacle : Obstacle) : Drawable =
       Drawable.Image = "obstacle.png" }
 
 let drawInitialState (gameState : GameState) : seq<Drawable> =
-    let listOfObstacles = 
-        Map.map gameState.Obstacles drawObstacle
+    let listOfObstacles = Seq.map gameState.Obstacles drawObstacle
 
     listOfObstacles
     
