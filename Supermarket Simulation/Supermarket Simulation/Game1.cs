@@ -75,6 +75,9 @@ namespace Supermarket_Simulation
             var state = Mouse.GetState();
             System.Console.WriteLine("X: "+ state.X + "     Y: " + state.Y);
             System.Console.Read();
+
+            gameState = SimulationLogic.updateState(gameState, (float)gameTime.ElapsedGameTime.TotalSeconds);
+
             base.Update(gameTime);
         }
 
@@ -93,6 +96,11 @@ namespace Supermarket_Simulation
             foreach (var drawable in SimulationLogic.drawInitialState(gameState))
             {
                 spriteBatch.Draw(Content.Load<Texture2D>(drawable.Image), drawable.Position, Color.White);
+            }
+
+            foreach (var customer in SimulationLogic.drawState(gameState))
+            {
+                spriteBatch.Draw(Content.Load<Texture2D>(customer.Image), customer.Position, Color.White);
             }
             spriteBatch.End();
 

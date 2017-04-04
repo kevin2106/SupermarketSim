@@ -4,7 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>c:/users/gertj/documents/visual studio 2017/Projects/Supermarket Simulation/Supermarket Simulation/Content/wall.jpg</File>
-    <File>c:/users/gertj/documents/visual studio 2017/Projects/Supermarket Simulation/Supermarket Simulation/Content/obstacle.png</File>
+    <File>D:/Github/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/wall.jpg</File>
+    <File>D:/Github/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/obstacle.png</File>
+    <File>D:/Github/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/customer.png</File>
   </SourceFiles>
 </SourceFileCollection>

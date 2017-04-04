@@ -20,3 +20,25 @@ c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supe
 c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.Direct3D11.xml
 c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.MediaFoundation.xml
 c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.Direct2D1.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SupermarketLogic.XML
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SupermarketLogic.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SupermarketLogic.pdb
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\FSharp.Core.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\MonoGame.Framework.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\System.ValueTuple.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.DXGI.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.XAudio2.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.Direct3D11.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.MediaFoundation.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.Direct2D1.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\MonoGame.Framework.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\FSharp.Core.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.DXGI.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.XAudio2.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.Direct3D11.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.MediaFoundation.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\bin\Debug\SharpDX.Direct2D1.xml
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\obj\Debug\SupermarketLogic.dll
+D:\Github\SupermarketSim\Supermarket Simulation\SupermarketLogic\obj\Debug\SupermarketLogic.pdb

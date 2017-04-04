@@ -29,3 +29,35 @@ c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supe
 c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.xml
 c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.xml
 c:\users\gertj\documents\visual studio 2017\Projects\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\obstacle.xnb
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\obstacle.xnb
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\wall.xnb
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.exe.config
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.exe
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.pdb
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.pdb
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.csprojResolveAssemblyReference.cache
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.exe
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.pdb
+D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\customer.xnb
