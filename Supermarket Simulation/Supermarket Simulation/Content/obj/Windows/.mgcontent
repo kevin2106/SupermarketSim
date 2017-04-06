@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/Github/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/wall.jpg</File>
-    <File>D:/Github/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/obstacle.png</File>
-    <File>D:/Github/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/customer.png</File>
+    <File>C:/Users/KevinPC/Desktop/SupermarketSim-master/SupermarketSim-master/Supermarket Simulation/Supermarket Simulation/Content/wall.jpg</File>
+    <File>C:/Users/KevinPC/Desktop/SupermarketSim-master/SupermarketSim-master/Supermarket Simulation/Supermarket Simulation/Content/obstacle.png</File>
+    <File>C:/Users/KevinPC/Desktop/SupermarketSim-master/SupermarketSim-master/Supermarket Simulation/Supermarket Simulation/Content/customer.png</File>
   </SourceFiles>
 </SourceFileCollection>

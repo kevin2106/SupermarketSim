@@ -36,11 +36,7 @@ type Drawable =
 type Obstacle = 
     { Position : Vector2 }
 
-type CustomerPathFinding = 
-    |GoToAisleX of Vector2
-    |GoToAisleY of Vector2
-    |GoToRegisterX of Vector2
-    |GoToRegisterY of Vector2
+type CustomerPathFinding = Vector2 * int
 
 
 type Customer = 
@@ -48,7 +44,7 @@ type Customer =
         Position: Vector2
         ShoppingListCount : int
         CurrentItemLocation : Vector2
-        Status: CustomerPathFinding
+        nextWaypoint: CustomerPathFinding
     }
 
 type GameState = 
@@ -269,17 +265,47 @@ let initialState() =
           ] 
 }
 
+let getRandomAisle () = 
+    let aisleProbability = r.Next(0,3)
+    
+    let aisle = 
+        if aisleProbability = 0 then
+            (Vector2(1000.f, 400.f), 0 )
+        elif aisleProbability = 1 then
+            (Vector2(1200.f, 400.f), 0)
+        else 
+            (Vector2(2100.f, 400.f) , 0)
+            
+    aisle
+
 let spawnLocationCustomer() = 
     {
         Customer.Position = Vector2(float32(r.Next(5,35)), float32(r.Next(35, 120)))
         Customer.ShoppingListCount = r.Next(1,4)
-        Customer.Status = GoToAisleX(Vector2(32.f, 43.f))
+
+
+
+        Customer.nextWaypoint = getRandomAisle()
         Customer.CurrentItemLocation = Vector2(606.f, 180.f)
     }
 
-let updateCustomer(dt:float32) (customer:Customer): Customer = {
+
+let walk(dt:float32) (customer:Customer): Customer= {
     customer with Position = customer.Position + Vector2.UnitX * dt * 10.0f
 }
+
+let walkLogic(dt:float32) (customer:Customer)= 
+    if snd customer.nextWaypoint = 0 then
+        let waypoint = fst customer.nextWaypoint
+        if customer.Position.X < waypoint.X then
+           
+           customer
+        else
+            customer
+    else
+        customer
+                                           
+
 
 let updateCustomers (customers : seq<Customer>) (dt:float32) = 
     //spawn
@@ -296,7 +322,7 @@ let updateCustomers (customers : seq<Customer>) (dt:float32) =
     //TODO: walk to destination
     //call updateCustomer
     //let newCustomers map (updateCustomer dt) newCustomers
-    let newCustomers = Seq.map (updateCustomer dt) newCustomers
+    let newCustomers = Seq.map (walkLogic dt) newCustomers
     newCustomers
     //newCustomers
     //TODO: if type = payed --> remove customer

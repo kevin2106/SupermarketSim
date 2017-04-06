@@ -35,6 +35,8 @@ namespace Supermarket_Simulation
             // TODO: Add your initialization logic here
 
             base.Initialize();
+
+            this.IsMouseVisible = true;
         }
 
         /// <summary>
@@ -45,6 +47,7 @@ namespace Supermarket_Simulation
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            
 
             // TODO: use this.Content to load your game content here
 
@@ -73,9 +76,8 @@ namespace Supermarket_Simulation
 
             // TODO: Add your update logic here
             var state = Mouse.GetState();
-            System.Console.WriteLine("X: "+ state.X + "     Y: " + state.Y);
-            System.Console.Read();
-
+            //System.Console.WriteLine("X: "+ state.X + "     Y: " + state.Y);
+           // System.Console.Read();
             gameState = SimulationLogic.updateState(gameState, (float)gameTime.ElapsedGameTime.TotalSeconds);
 
             base.Update(gameTime);
@@ -101,6 +103,7 @@ namespace Supermarket_Simulation
             foreach (var customer in SimulationLogic.drawState(gameState))
             {
                 spriteBatch.Draw(Content.Load<Texture2D>(customer.Image), customer.Position, Color.White);
+                System.Console.WriteLine(customer.Position);
             }
             spriteBatch.End();
 

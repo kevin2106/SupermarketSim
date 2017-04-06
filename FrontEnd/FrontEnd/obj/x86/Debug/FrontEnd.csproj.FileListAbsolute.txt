@@ -28,3 +28,6 @@ C:\Users\KevinPC\Documents\Visual Studio 2015\Projects\FrontEnd\FrontEnd\bin\Win
 C:\Users\KevinPC\Documents\Visual Studio 2015\Projects\FrontEnd\FrontEnd\bin\Windows\x86\Debug\Library1.pdb
 C:\Users\KevinPC\Documents\Visual Studio 2015\Projects\FrontEnd\FrontEnd\bin\Windows\x86\Debug\Library1.xml
 C:\Users\KevinPC\Documents\Visual Studio 2015\Projects\FrontEnd\FrontEnd\bin\Windows\x86\Debug\FSharp.Core.xml
+C:\Users\KevinPC\Desktop\SupermarketSim-master\SupermarketSim-master\FrontEnd\FrontEnd\bin\Windows\x86\Debug\FrontEnd.exe.config
+C:\Users\KevinPC\Desktop\SupermarketSim-master\SupermarketSim-master\FrontEnd\FrontEnd\obj\x86\Debug\FrontEnd.exe
+C:\Users\KevinPC\Desktop\SupermarketSim-master\SupermarketSim-master\FrontEnd\FrontEnd\obj\x86\Debug\FrontEnd.pdb
