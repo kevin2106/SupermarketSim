@@ -310,9 +310,12 @@ let updateCustomer (shoppingItem: ShoppingItem) (dt:float32) (customer:Customer)
                         {customer with Status = GoToRegisterY}   
                 else //no more shopping to do?
                     {customer with Status = GoToAisleX}
-           
+        | GoToRegisterY ->
+            if customer.Position.Y < 864.f then
+                  {customer with Position = customer.Position + Vector2.UnitY * dt * 75.0f}
+            else 
+                customer
 
-    
         | _ -> customer  
 
     customer
@@ -324,7 +327,11 @@ let updateCustomer (shoppingItem: ShoppingItem) (dt:float32) (customer:Customer)
 
 let updateCustomers (customers : seq<Customer>) (dt:float32)  = 
     //spawn
-    let spawnProbability = r.Next(0,1000)
+    let spawnProbability =
+        if Seq.length customers < 10 then
+            r.Next(0,1000)
+        else
+            0
     
     let newCustomers = 
         if spawnProbability > 990 then

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/Github/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/wall.jpg</SourceFile>
-  <SourceTime>2017-04-02T22:46:48.4972385+02:00</SourceTime>
-  <DestFile>D:/Github/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/bin/Windows/wall.xnb</DestFile>
-  <DestTime>2017-04-04T16:28:43.5142937+02:00</DestTime>
+  <SourceFile>D:/Lars/Documents/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/wall.jpg</SourceFile>
+  <SourceTime>2017-04-06T15:45:28.1238682+02:00</SourceTime>
+  <DestFile>D:/Lars/Documents/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/bin/Windows/wall.xnb</DestFile>
+  <DestTime>2017-04-10T20:51:03.1505523+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T16:05:36+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

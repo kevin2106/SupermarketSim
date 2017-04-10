@@ -61,3 +61,35 @@ D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\D
 D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.exe
 D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.pdb
 D:\Github\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\customer.xnb
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\customer.xnb
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\obstacle.xnb
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\wall.xnb
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.exe.config
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.exe
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.pdb
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\MonoGame.Framework.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XInput.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.pdb
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\MonoGame.Framework.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XInput.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.csprojResolveAssemblyReference.cache
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.exe
+D:\Lars\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.pdb
