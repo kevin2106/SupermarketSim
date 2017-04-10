@@ -26,7 +26,9 @@ let initShoppingItems = {
             {Position = Vector2(834.f,467.f)}
         ]
 }
-        
+let getRandomShoppingItem (list : List<ShoppingItem>) : ShoppingItem =
+     let item = list.[r.Next(0,8)]
+     item
 
 type Drawable = 
     { Position : Vector2
@@ -297,29 +299,17 @@ let updateCustomer(dt:float32) (customer:Customer): Customer =
             if customer.Position.Y < customer.CurrentShoppingTarget.Position.Y then
                 {customer with Position = customer.Position + Vector2.UnitY * dt * 75.0f}
             else
-                
-                {customer with Status = GoBack; CurrentShoppingTarget =  }
+                //TODO set countitems -1
+                //TODO new random item
+                {customer with Status = GoBack;  ShoppingListCount = customer.ShoppingListCount - 1; CurrentShoppingTarget = getRandomShoppingItem initShoppingItems.Items }
         | GoBack ->
             if customer.Position.Y > 107.f then
                  {customer with Position = customer.Position - Vector2.UnitY * dt * 75.0f}
             else
                 if customer.ShoppingListCount = 0 then //has still some shopping to do?
-                    //TODO set countitems -1
-                    //TODO new random item
                         {customer with Status = GoToRegisterY}   
-                
-                        //{customer with ShoppingListCount = customer.ShoppingListCount - 1}
-                        //{customer with Status = GoBack} 
                 else //no more shopping to do?
-                    //System.Console.WriteLine(customer.CurrentShoppingTarget.Position.X.ToString() + "   " + customer.CurrentShoppingTarget.Position.Y.ToString())
-                    //{
-                    //customer with 
-                    //    Status = GoToAisleX;
-                    //    CurrentShoppingTarget = initShoppingItems.Items.Item(r.Next(0,initShoppingItems.Items.Length));
-                    //    ShoppingListCount = customer.ShoppingListCount - 1;
-                    
-                    //}
-                    {customer with Status = GoToAisleX; ShoppingListCount = customer.ShoppingListCount - 1}
+                    {customer with Status = GoToAisleX}
            
 
     
