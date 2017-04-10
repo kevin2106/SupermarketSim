@@ -26,11 +26,6 @@ let initShoppingItems = {
             {Position = Vector2(834.f,467.f)}
         ]
 }
-
-//let getRandomShoppingItem (shoppingItemsList : ShoppingItems) : ShoppingItem = {
-//    Seq.take 2 shoppingItemsList.Items
-     
-//}
         
 
 type Drawable = 
@@ -287,14 +282,13 @@ let spawnLocationCustomer() =
 let updateCustomer(dt:float32) (customer:Customer): Customer = 
 
     //customer with Position = customer.Position + Vector2.UnitX * dt * 100.0f
-
     let customer =
     //moving customer.position.X to align with shoppingtarget.X
         match customer.Status with
         | GoToAisleX -> 
-            if customer.Position.X + 80.f < customer.CurrentShoppingTarget.Position.X  then // target is right
+            if customer.Position.X + 10.f < customer.CurrentShoppingTarget.Position.X  then // target is right
                 {customer with Position = customer.Position + Vector2.UnitX * dt * 75.0f}
-            elif customer.Position.X - 80.f > customer.CurrentShoppingTarget.Position.X then //target is left
+            elif customer.Position.X - 10.f > customer.CurrentShoppingTarget.Position.X then //target is left
                 {customer with Position = customer.Position - Vector2.UnitX * dt * 75.0f}
             else
                 {customer with Status = GoToAisleY}
@@ -303,27 +297,29 @@ let updateCustomer(dt:float32) (customer:Customer): Customer =
             if customer.Position.Y < customer.CurrentShoppingTarget.Position.Y then
                 {customer with Position = customer.Position + Vector2.UnitY * dt * 75.0f}
             else
-                {customer with Status = GoBack}
+                
+                {customer with Status = GoBack; CurrentShoppingTarget =  }
         | GoBack ->
             if customer.Position.Y > 107.f then
                  {customer with Position = customer.Position - Vector2.UnitY * dt * 75.0f}
             else
                 if customer.ShoppingListCount = 0 then //has still some shopping to do?
-                        //TODO set countitems -1
-                        //TODO new random item
-                         {customer with Status = GoToRegisterY}   
+                    //TODO set countitems -1
+                    //TODO new random item
+                        {customer with Status = GoToRegisterY}   
                 
                         //{customer with ShoppingListCount = customer.ShoppingListCount - 1}
                         //{customer with Status = GoBack} 
                 else //no more shopping to do?
                     //System.Console.WriteLine(customer.CurrentShoppingTarget.Position.X.ToString() + "   " + customer.CurrentShoppingTarget.Position.Y.ToString())
-                    {
-                    customer with 
-                        Status = GoToAisleX;
-                        CurrentShoppingTarget = initShoppingItems.Items.Item(r.Next(0,initShoppingItems.Items.Length));
-                        ShoppingListCount = customer.ShoppingListCount - 1;
+                    //{
+                    //customer with 
+                    //    Status = GoToAisleX;
+                    //    CurrentShoppingTarget = initShoppingItems.Items.Item(r.Next(0,initShoppingItems.Items.Length));
+                    //    ShoppingListCount = customer.ShoppingListCount - 1;
                     
-                    }
+                    //}
+                    {customer with Status = GoToAisleX; ShoppingListCount = customer.ShoppingListCount - 1}
            
 
     
