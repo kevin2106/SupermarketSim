@@ -281,7 +281,7 @@ let spawnLocationCustomer() =
         Customer.CurrentShoppingTarget = initShoppingItems.Items.Item(r.Next(0,initShoppingItems.Items.Length))
     }
     
-let updateCustomer(dt:float32) (customer:Customer): Customer = 
+let updateCustomer (shoppingItem: ShoppingItem) (dt:float32) (customer:Customer): Customer = 
 
     //customer with Position = customer.Position + Vector2.UnitX * dt * 100.0f
     let customer =
@@ -301,7 +301,7 @@ let updateCustomer(dt:float32) (customer:Customer): Customer =
             else
                 //TODO set countitems -1
                 //TODO new random item
-                {customer with Status = GoBack;  ShoppingListCount = customer.ShoppingListCount - 1; CurrentShoppingTarget = getRandomShoppingItem initShoppingItems.Items }
+                {customer with Status = GoBack;  ShoppingListCount = customer.ShoppingListCount - 1; CurrentShoppingTarget = shoppingItem }
         | GoBack ->
             if customer.Position.Y > 107.f then
                  {customer with Position = customer.Position - Vector2.UnitY * dt * 75.0f}
@@ -322,7 +322,7 @@ let updateCustomer(dt:float32) (customer:Customer): Customer =
     //TODO if reached destination --> change status
 
 
-let updateCustomers (customers : seq<Customer>) (dt:float32) = 
+let updateCustomers (customers : seq<Customer>) (dt:float32)  = 
     //spawn
     let spawnProbability = r.Next(0,1000)
     
@@ -334,7 +334,7 @@ let updateCustomers (customers : seq<Customer>) (dt:float32) =
             
     //TODO: walk to destination
     //call updateCustomer
-    let newCustomers = Seq.map (updateCustomer dt) newCustomers
+    let newCustomers = Seq.map (updateCustomer (getRandomShoppingItem initShoppingItems.Items) dt) newCustomers 
     newCustomers
 
     //TODO: if type = payed --> remove customer
@@ -343,7 +343,7 @@ let updateCustomers (customers : seq<Customer>) (dt:float32) =
 let updateState (gameState : GameState) (dt:float32) = {
 
     gameState with 
-        Customers = updateCustomers gameState.Customers dt
+        Customers = updateCustomers gameState.Customers dt 
 }
 
 
