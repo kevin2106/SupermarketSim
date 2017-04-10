@@ -3,23 +3,27 @@
 open Microsoft.Xna.Framework
 
 let r = new System.Random()
+let mutable idCount = 0;
 
 type ShoppingItem = {
     Position : Vector2
 }
 
 type ShoppingItems = {
-    Items : seq<ShoppingItem>
+    Items : list<ShoppingItem>
 }
 
 let initShoppingItems = {
     Items =
         [
-            {Position = Vector2(34.f,34.f)}
-            {Position = Vector2(34.f,34.f)}
-            {Position = Vector2(34.f,34.f)}
-            {Position = Vector2(34.f,34.f)}
-            {Position = Vector2(34.f,34.f)}
+            {Position = Vector2(261.f,439.f)}
+            {Position = Vector2(448.f,569.f)}
+            {Position = Vector2(664.f,511.f)}
+            {Position = Vector2(218.f,498.f)}
+            {Position = Vector2(408.f,553.f)}
+            {Position = Vector2(599.f,557.f)}
+            {Position = Vector2(795.f,526.f)}
+            {Position = Vector2(834.f,467.f)}
         ]
 }
 
@@ -37,17 +41,19 @@ type Obstacle =
     { Position : Vector2 }
 
 type CustomerPathFinding = 
-    |GoToAisleX of Vector2
-    |GoToAisleY of Vector2
-    |GoToRegisterX of Vector2
-    |GoToRegisterY of Vector2
+    |GoToAisleX
+    |GoToAisleY
+    |GoBack
+    |GoToRegisterX
+    |GoToRegisterY
 
 
 type Customer = 
     {
+        Id : int
         Position: Vector2
         ShoppingListCount : int
-        CurrentItemLocation : Vector2
+        CurrentShoppingTarget : ShoppingItem
         Status: CustomerPathFinding
     }
 
@@ -271,15 +277,64 @@ let initialState() =
 
 let spawnLocationCustomer() = 
     {
+        Customer.Id = r.Next(0, 999999)
         Customer.Position = Vector2(float32(r.Next(5,35)), float32(r.Next(35, 120)))
         Customer.ShoppingListCount = r.Next(1,4)
-        Customer.Status = GoToAisleX(Vector2(32.f, 43.f))
-        Customer.CurrentItemLocation = Vector2(606.f, 180.f)
+        Customer.Status = GoToAisleX
+        Customer.CurrentShoppingTarget = initShoppingItems.Items.Item(r.Next(0,initShoppingItems.Items.Length))
     }
+    
+let updateCustomer(dt:float32) (customer:Customer): Customer = 
 
-let updateCustomer(dt:float32) (customer:Customer): Customer = {
-    customer with Position = customer.Position + Vector2.UnitX * dt * 10.0f
-}
+    //customer with Position = customer.Position + Vector2.UnitX * dt * 100.0f
+
+    let customer =
+    //moving customer.position.X to align with shoppingtarget.X
+        match customer.Status with
+        | GoToAisleX -> 
+            if customer.Position.X + 80.f < customer.CurrentShoppingTarget.Position.X  then // target is right
+                {customer with Position = customer.Position + Vector2.UnitX * dt * 75.0f}
+            elif customer.Position.X - 80.f > customer.CurrentShoppingTarget.Position.X then //target is left
+                {customer with Position = customer.Position - Vector2.UnitX * dt * 75.0f}
+            else
+                {customer with Status = GoToAisleY}
+
+        | GoToAisleY ->
+            if customer.Position.Y < customer.CurrentShoppingTarget.Position.Y then
+                {customer with Position = customer.Position + Vector2.UnitY * dt * 75.0f}
+            else
+                {customer with Status = GoBack}
+        | GoBack ->
+            if customer.Position.Y > 107.f then
+                 {customer with Position = customer.Position - Vector2.UnitY * dt * 75.0f}
+            else
+                if customer.ShoppingListCount = 0 then //has still some shopping to do?
+                        //TODO set countitems -1
+                        //TODO new random item
+                         {customer with Status = GoToRegisterY}   
+                
+                        //{customer with ShoppingListCount = customer.ShoppingListCount - 1}
+                        //{customer with Status = GoBack} 
+                else //no more shopping to do?
+                    //System.Console.WriteLine(customer.CurrentShoppingTarget.Position.X.ToString() + "   " + customer.CurrentShoppingTarget.Position.Y.ToString())
+                    {
+                    customer with 
+                        Status = GoToAisleX;
+                        CurrentShoppingTarget = initShoppingItems.Items.Item(r.Next(0,initShoppingItems.Items.Length));
+                        ShoppingListCount = customer.ShoppingListCount - 1;
+                    
+                    }
+           
+
+    
+        | _ -> customer  
+
+    customer
+        
+        
+    //TODO check which way based on the customer status
+    //TODO if reached destination --> change status
+
 
 let updateCustomers (customers : seq<Customer>) (dt:float32) = 
     //spawn
@@ -291,14 +346,11 @@ let updateCustomers (customers : seq<Customer>) (dt:float32) =
         else
             customers  
             
-    //newCustomers
-    
     //TODO: walk to destination
     //call updateCustomer
-    //let newCustomers map (updateCustomer dt) newCustomers
     let newCustomers = Seq.map (updateCustomer dt) newCustomers
     newCustomers
-    //newCustomers
+
     //TODO: if type = payed --> remove customer
 
 
