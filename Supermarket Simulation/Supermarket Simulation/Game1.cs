@@ -11,6 +11,7 @@ namespace Supermarket_Simulation
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpriteFont font;
         SimulationLogic.GameState gameState;
 
         public Game1()
@@ -102,6 +103,11 @@ namespace Supermarket_Simulation
             foreach (var customer in SimulationLogic.drawState(gameState))
             {
                 spriteBatch.Draw(Content.Load<Texture2D>(customer.Image), customer.Position, Color.White);
+            }
+
+            foreach (var totalCash in SimulationLogic.drawCashState(gameState))
+            {
+                spriteBatch.DrawString(Content.Load<SpriteFont>("TotalCash"), "Total Register Cash: $" + totalCash.Cash, totalCash.Position, Color.Black);
             }
             spriteBatch.End();
 

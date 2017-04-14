@@ -49,3 +49,10 @@
 /processorParam:TextureFormat=Color
 /build:customer.png
 
+#begin TotalCash.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:TotalCash.spritefont
+

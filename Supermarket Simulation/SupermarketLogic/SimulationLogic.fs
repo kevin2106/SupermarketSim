@@ -7,6 +7,7 @@ let mutable idCount = 0;
 
 type ShoppingItem = {
     Position : Vector2
+    Value : int
 }
 
 type ShoppingItems = {
@@ -16,19 +17,38 @@ type ShoppingItems = {
 let initShoppingItems = {
     Items =
         [
-            {Position = Vector2(261.f,439.f)}
-            {Position = Vector2(448.f,569.f)}
-            {Position = Vector2(664.f,511.f)}
-            {Position = Vector2(218.f,498.f)}
-            {Position = Vector2(408.f,553.f)}
-            {Position = Vector2(599.f,557.f)}
-            {Position = Vector2(795.f,526.f)}
-            {Position = Vector2(834.f,467.f)}
+            {Position = Vector2(261.f,439.f); Value = 3}
+            {Position = Vector2(448.f,569.f); Value = 4}
+            {Position = Vector2(664.f,511.f); Value = 10}
+            {Position = Vector2(218.f,498.f); Value = 16}
+            {Position = Vector2(408.f,553.f); Value = 8}
+            {Position = Vector2(599.f,557.f); Value = 19}
+            {Position = Vector2(795.f,526.f); Value = 6}
+            {Position = Vector2(834.f,467.f); Value = 2}
         ]
 }
+
+type Register = {
+    Position : Vector2
+}
+
+type Registers = {
+    Registers : list<Register>
+}
+
+let initRegisters = {
+    Registers = 
+        [
+              {Position = Vector2(551.f,864.f);}
+              {Position = Vector2(210.f,864.f);}
+              {Position = Vector2(906.f,864.f);}
+        ]
+}
+
 let getRandomShoppingItem (list : List<ShoppingItem>) : ShoppingItem =
      let item = list.[r.Next(0,8)]
      item
+
 
 type Drawable = 
     { Position : Vector2
@@ -43,25 +63,38 @@ type CustomerPathFinding =
     |GoBack
     |GoToRegisterX
     |GoToRegisterY
+    |Checkout
 
-
+type TotalCash = 
+    {
+        Cash : int
+        Position : Vector2
+    }
 type Customer = 
     {
         Id : int
         Position: Vector2
         ShoppingListCount : int
+        BasketValue : int
         CurrentShoppingTarget : ShoppingItem
+        CurrentRegisterTarget : Register
         Status: CustomerPathFinding
     }
+
+
 
 type GameState = 
     {   
         Obstacles : seq<Obstacle>
         Customers : seq<Customer>
+        TotalCash : TotalCash
     }
 
 let initialState() = 
     { 
+        TotalCash = 
+                {Cash = 0; Position = Vector2(800.f, 54.f)}
+
         Customers = []
         Obstacles = 
           [ 
@@ -277,11 +310,13 @@ let spawnLocationCustomer() =
         Customer.Id = r.Next(0, 999999)
         Customer.Position = Vector2(float32(r.Next(5,35)), float32(r.Next(35, 120)))
         Customer.ShoppingListCount = r.Next(1,4)
+        Customer.BasketValue = 0
         Customer.Status = GoToAisleX
         Customer.CurrentShoppingTarget = initShoppingItems.Items.Item(r.Next(0,initShoppingItems.Items.Length))
+        Customer.CurrentRegisterTarget =  initRegisters.Registers.Item(r.Next(0, initRegisters.Registers.Length))
     }
     
-let updateCustomer (shoppingItem: ShoppingItem) (dt:float32) (customer:Customer): Customer = 
+let updateCustomer (shoppingItem: ShoppingItem) (dt:float32) (customer:Customer) : Customer = 
 
     //customer with Position = customer.Position + Vector2.UnitX * dt * 100.0f
     let customer =
@@ -299,9 +334,8 @@ let updateCustomer (shoppingItem: ShoppingItem) (dt:float32) (customer:Customer)
             if customer.Position.Y < customer.CurrentShoppingTarget.Position.Y then
                 {customer with Position = customer.Position + Vector2.UnitY * dt * 75.0f}
             else
-                //TODO set countitems -1
-                //TODO new random item
-                {customer with Status = GoBack;  ShoppingListCount = customer.ShoppingListCount - 1; CurrentShoppingTarget = shoppingItem }
+            //grabbing item + get new shoppingitem target
+                {customer with Status = GoBack;  ShoppingListCount = customer.ShoppingListCount - 1; CurrentShoppingTarget = shoppingItem; BasketValue = customer.BasketValue + shoppingItem.Value }
         | GoBack ->
             if customer.Position.Y > 107.f then
                  {customer with Position = customer.Position - Vector2.UnitY * dt * 75.0f}
@@ -314,18 +348,33 @@ let updateCustomer (shoppingItem: ShoppingItem) (dt:float32) (customer:Customer)
             if customer.Position.Y < 864.f then
                   {customer with Position = customer.Position + Vector2.UnitY * dt * 75.0f}
             else 
-                customer
+                {customer with Status = GoToRegisterX}
+        | GoToRegisterX ->
+            if customer.Position.X < customer.CurrentRegisterTarget.Position.X then
+                {customer with Position = customer.Position + Vector2.UnitX * dt * 75.0f}
+            elif  customer.Position.X > customer.CurrentRegisterTarget.Position.X then
+                {customer with Position = customer.Position - Vector2.UnitX * dt * 75.0f}
+            else
+                  {customer with Status = Checkout}
 
-        | _ -> customer  
+        | Checkout -> customer
 
+        | _ -> customer    
     customer
-        
+
+//    let updateTotalCash  (customer:Customer) (totalCash:TotalCash) : TotalCash  = 
+//        //TODO
+//        match
+//        //check if status = checkout
+//        // if true -> add basketvalue to totalCash
+//        // remove customer
+//        {totalCash with Cash = totalCash.Cash + customer.BasketValue}
         
     //TODO check which way based on the customer status
     //TODO if reached destination --> change status
 
 
-let updateCustomers (customers : seq<Customer>) (dt:float32)  = 
+let updateCustomers (customers : seq<Customer>) (dt:float32)   = 
     //spawn
     let spawnProbability =
         if Seq.length customers < 10 then
@@ -341,7 +390,7 @@ let updateCustomers (customers : seq<Customer>) (dt:float32)  =
             
     //TODO: walk to destination
     //call updateCustomer
-    let newCustomers = Seq.map (updateCustomer (getRandomShoppingItem initShoppingItems.Items) dt) newCustomers 
+    let newCustomers = Seq.map (updateCustomer (getRandomShoppingItem initShoppingItems.Items) dt)  newCustomers      
     newCustomers
 
     //TODO: if type = payed --> remove customer
@@ -349,8 +398,9 @@ let updateCustomers (customers : seq<Customer>) (dt:float32)  =
 
 let updateState (gameState : GameState) (dt:float32) = {
 
-    gameState with 
-        Customers = updateCustomers gameState.Customers dt 
+    gameState with Customers = updateCustomers gameState.Customers dt; 
+                    //TotalCash = Seq.map upd   
+   // gameState with TotalCash = //iterate over customers with status checkout
 }
 
 
@@ -364,6 +414,12 @@ let drawObstacle (obstacle : Obstacle) : Drawable =
     Drawable.Image = "obstacle" 
 }
 
+let drawTotalCash (totalcash : TotalCash) : TotalCash = 
+    {
+        TotalCash.Cash = totalcash.Cash
+        TotalCash.Position = totalcash.Position
+    }
+
 let drawcustomer (customer : Customer) : Drawable = 
     {
         Drawable.Image = "customer"
@@ -374,7 +430,11 @@ let drawState (gameState : GameState) : seq<Drawable> =
     let listOfCustomers = Seq.map drawcustomer gameState.Customers
 
     listOfCustomers
-    
+
+let drawCashState (gameState : GameState) : TotalCash = 
+    let totalCash = drawTotalCash gameState.TotalCash
+
+    totalCash
 
 let drawInitialState (gameState : GameState) : seq<Drawable> = 
     let listOfObstacles = Seq.map drawObstacle gameState.Obstacles 
