@@ -126,3 +126,36 @@ C:\Users\KevinPC\Desktop\SupermarketSim-master\Supermarket Simulation\Supermarke
 C:\Users\KevinPC\Desktop\SupermarketSim-master\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.exe
 C:\Users\KevinPC\Desktop\SupermarketSim-master\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.pdb
 C:\Users\KevinPC\Desktop\SupermarketSim-master\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\TotalCash.xnb
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\customer.xnb
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\obstacle.xnb
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\TotalCash.xnb
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Content\wall.xnb
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.exe.config
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.exe
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\Supermarket Simulation.pdb
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.pdb
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SupermarketLogic.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\FSharp.Core.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.exe
+C:\Users\Kevin\Documents\SupermarketSim\Supermarket Simulation\Supermarket Simulation\obj\x86\Debug\Supermarket Simulation.pdb

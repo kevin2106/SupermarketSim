@@ -4,9 +4,9 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/KevinPC/Desktop/SupermarketSim-master/Supermarket Simulation/Supermarket Simulation/Content/wall.jpg</File>
-    <File>C:/Users/KevinPC/Desktop/SupermarketSim-master/Supermarket Simulation/Supermarket Simulation/Content/obstacle.png</File>
-    <File>C:/Users/KevinPC/Desktop/SupermarketSim-master/Supermarket Simulation/Supermarket Simulation/Content/customer.png</File>
-    <File>C:/Users/KevinPC/Desktop/SupermarketSim-master/Supermarket Simulation/Supermarket Simulation/Content/TotalCash.spritefont</File>
+    <File>C:/Users/Kevin/Documents/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/wall.jpg</File>
+    <File>C:/Users/Kevin/Documents/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/obstacle.png</File>
+    <File>C:/Users/Kevin/Documents/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/customer.png</File>
+    <File>C:/Users/Kevin/Documents/SupermarketSim/Supermarket Simulation/Supermarket Simulation/Content/TotalCash.spritefont</File>
   </SourceFiles>
 </SourceFileCollection>
